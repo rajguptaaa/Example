@@ -13,6 +13,112 @@
     <p>CO<sub>2</sub></p>
     <p>10<sup>2</sup>=100</p>
     <h6>hello this is the changes i am doing to check git commit</h6>
+    <br>
+    <iframe src="https://www.flipkart.com" title="Flipkart" height="400" width="30%" style="border:none;"></iframe>
+    <br>
+    <p>
+        Lorem <strong><em>em tag</em></strong> dolor sit, amet consectetur adipisicing elit. Eaque cupiditate dolore <strong><i>i tag</i></strong>. Sed sapiente quod praesentium, ducimus temporibus mollitia natus deleniti maiores qui veritatis aliquid perferendis <b>bold tag</b> doloremque <strong>strong tag</strong>aspernatur officia delectus ratione? Velit porro nihil odit deleniti explicabo rem distinctio inventore unde tempora assumenda, consequatur <strong><abbr  title="EVS">Abbr tag</abbr></strong> necessitatibus obcaecati temporibus aspernatur.
+    </p>
+<center>
+        <table border="1">
+            <caption>Student Data</caption>
+            <thead>
+                <tr>
+                    <th>Sl No.</th>
+                    <th>F Name</th>
+                    <th>L Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td colspan="2">Raj Gupta</td>
+                    <td rowspan="2">21</td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td colspan="2">Raj</td>
+                </tr>
+            </tbody>
+        </table>
+</center>
+<br>
+<br>
+<form>
+    <label>First Name / Preferred Name:</label>
+        <input placeholder="Please type here..." type="text" name="userFirstName" maxlength="4" required
+            autocapitalize="characters">
+        <br><br>
+        <label>Age:</label>
+        <input placeholder="Please type here..." type="number" name="age" value="18">
+        <br><br>
+        <label>Email:</label>
+        <input placeholder="Please type here..." type="email" name="userEmail" required autocomplete="off">
+        <br><br>
+        <label>Password:</label>
+        <input placeholder="Please type here..." type="password" name="userPassword" required>
+        <br><br>
+        <label>Donation:</label>
+        <input placeholder="Please type here..." type="number" name="donation" required value="10" readonly>
+        <br><br>
+        <input type="submit">
+        <input type="reset">
+    <div>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" id="i-g-m"><label for="i-g-m">Male</label><br>
+        <input type="radio" name="gender" value="female" id="i-g-f" checked><label for="i-g-f">Female</label>
+    </div>
+    <div>
+        <label>Documents:</label><br>
+        <input type="checkbox" name="document-submitted" value="passport" id="i-d-p"><label
+            for="i-d-p">Passport</label><br>
+        <input type="checkbox" name="document-submitted" value="dr-lc" id="i-d-d"><label for="i-d-d">Driving
+            License</label><br>
+        <input type="checkbox" name="document-submitted" value="re-pr" id="i-d-r" checked disabled><label
+            for="i-d-r">Resident
+            Proof</label><br>
+        <br>
+    </div>
+    <div>
+        <label>Documents:</label><br>
+        <select name="document-selected">
+            <option value="passport">Passport</option>
+            <option value="dr-lc" selected>Driving License</option>
+            <option value="re-pr">Resident Proof</option>
+        </select>
+        <br>
+    </div>
+    <div>
+        <label>Score:</label><br>
+        <input type="range" name="score-yourself" min="1" max="10" value="2">
+    </div>
+
+    <textarea name="description" rows="10" cols="50">This is my request to register....</textarea>
+    <br><br>
+
+
+    <input type="checkbox" hidden name="document-submitted" value="re-pr" id="i-d-r" checked>
+    <button>Register</button> <!-- default is type="submit" -->
+    <!-- <input type="submit" value="Register"> -->
+</form>
+
+<h4>Naming convention</h4>
+    <dl>
+        <dt>camelCase</dt>
+        <dd>multiple words are joined by making the first letter capital (except first word)<br>
+            ex. hello manoj ==> helloManoj
+        </dd>
+        <dt>kebab-case / hyphen-case</dt>
+        <dd>multiple words are joined by '-' in between<br>
+            ex. hello manoj ==> hello-manoj
+        </dd>
+        <dt>snake_case</dt>
+        <dd>multiple words are joined by '_' in between<br>
+            ex. hello manoj ==> hello_manoj
+        </dd>
+    </dl>
+
 </body>
 </html>
 

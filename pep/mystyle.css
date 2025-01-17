@@ -1,0 +1,11 @@
+.text-type-1{
+    color: blue;
+    background-color: yellow;
+    height: 100%;
+}
+
+.text-type-2{
+    color: blue;
+    background-color: yellow;
+    width: 200%;
+}
