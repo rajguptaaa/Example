@@ -1,11 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
 .text-type-1{
-    color: blue;
     background-color: yellow;
-    height: 100%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 10px solid grey;
+    margin: 10px;
 }
 
 .text-type-2{
-    color: blue;
     background-color: yellow;
-    width: 200%;
+    width: 200px;
+    width: 200px;
+    padding: 20px;
+    border: 20px solid grey;
+    margin: 20px;
+}
+
+/* Browser's default CSS < * < tag < . < # < inline < !important */
+*{
+    color: purple;
+}
+.text{
+    color: darkgreen;
+}
+#text1{
+    color: brown;
+}
+h4{
+    color: goldenrod;
 }
