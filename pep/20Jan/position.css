@@ -1,0 +1,56 @@
+.relative-box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid green;
+    position: static;
+}
+.abox2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(255, 0, 43);
+    position: absolute;
+    top: 20px;
+}
+.abox{
+    width: 400px;
+    height: 200px;
+    border: 2px solid rgb(255, 0, 43);
+    position: relative;
+}
+h2{
+    color: red;
+    background-color: yellow;
+}
+
+.errorBox{
+    position: fixed; 
+    top: 0px;
+}
+
+.sticky-box{
+    position: sticky;
+    top: 5px;
+    color: red;
+    background-color: yellowgreen;
+}
+
+pre{
+    color: red;
+    background-color: yellowgreen;
+}
+
+.child {
+    border: 2px solid black;
+    height: 100px
+}
+
+.parent{
+    width: 400px;
+    height: 300px;
+    border: 2px solid red;
+    display:flex ;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}

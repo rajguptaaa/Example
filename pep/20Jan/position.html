@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+<body>
+    <br><!-- static -->
+    <h1 style="color: blue;">Hello World</h1>
+    <div style="width: 100px; height: 100px; border: 2px solid red;">Hello World</div>
+    <br><!-- relative -->
+    <div class="relative-box">Box 2</div>
+     <br><!-- absolute -->
+     <div class="abox">
+        <div class="abox2">
+            Absolute Box
+        </div>
+     </div>
+    <br>
+    <!-- fixed -->
+    <div class="errorBox">
+        <h2>Server is down</h2>
+    </div>
+    <!-- sticky -->
+     <div class="sticky-box">
+        Hi, I am Sticky (relative + fixed)
+     </div>
+     <div style="height: 100vh;">
+        <p>Hello Paragraph</p>
+     </div>
+     <pre>
+        static--by default every element is static
+        relative--relative to its original position
+        absolute-relative to its nearest parent positioned element
+        fixed- fixed
+        stciky-relative+fixed(once reach to defined offset it will behave like fixed )
+     </pre>
+
+     <div class="parent">
+        <div class="child">Box1</div>
+        <div class="child">Box2</div>
+        <div class="child">Box3</div>
+        <div class="child">Box4</div>
+        <div class="child">Box5</div>
+        <div class="child">Box6</div>
+        <div class="child">Box7</div>
+        <div class="child">Box8</div>
+     </div>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .box {
+    width: 1000;
+    height: 55px;
+    padding: 100px; 
+    border: 20px solid #ff860e; 
+    margin: 50px;
+    background-color: #b3ff00; 
+    box-sizing: content-box;
+    color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
