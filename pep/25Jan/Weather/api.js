@@ -9,7 +9,7 @@
 //   };
 //   try {
 //     const response = await fetch(url, options);                                         NOT_WORKING
-//     const result = await response.text();
+//     const result = await response.json();
 //     console.log(result);
 //   } catch (error) {
 //     console.error(error);               
@@ -29,8 +29,8 @@ const getData = async () => {
     const dataObj = await res.json();
     console.log(dataObj);
     displayData(dataObj);
-}catch (err) {
-    alert("Kuch to garbar hai! Daya");
+  } catch (err) {
+    alert("Kuch to garbar hai! Daya", err);
   }
 };
 const handelSearch = () => {

@@ -132,7 +132,6 @@ const Display = () => {
     </div>
     )
 };
-
 root.render(<Display/>);
 
 
