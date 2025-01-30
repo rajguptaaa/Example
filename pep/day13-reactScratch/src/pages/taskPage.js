@@ -22,7 +22,7 @@ import { useState } from "react";
 
 const Form = () => {
 
-    let [name, setName] = useState('')
+    let [name, setName] = useState('');
     let [place, setPlace] = useState('');
     let [designation, setDesignation] = useState('');
 
