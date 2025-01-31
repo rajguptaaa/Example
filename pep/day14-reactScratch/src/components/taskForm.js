@@ -1,63 +1,50 @@
-import { useState } from "react";
+import "./taskForm.css";
+const TaskForm = ({ setTaskList, assigneeOptions }) => {
+    const handleSubmitTask = (e) => {
+        e.preventDefault();
 
-const Taskform = ({setTaskList}) => {
-    const [task, setTask] = useState("");
-    const [task2, setTask2] = useState("");
-    const [assignee, setAssignee] = useState('Raj');
-
-    const handleSubmit = () => {
         const obj = {
-            task,
-            task2,
-            assignee,
-            assignor : "Sir",
-
+            workTitle: e.target[0].value,
+            taskTitle: e.target[1].value,
+            assignee: e.target[2].value,
+            deadline: e.target[3].value,
+            assignor: "sir",
         };
+
         setTaskList((prev) => {
-            const newArr = [...prev];
+            const newArr = [...prev]; 
             newArr.push(obj);
             return newArr;
         });
     };
 
     return (
-        <>
-            <p className="taskForm-p">Hello from Taskform!</p>
-            <div className="user-task-input">
-            <label>Work Title: </label>
-            <input
-                value={task}
-                onChange={(e) => setTask(e.target.value)}
-            />
+        // we use it on form
+        <form onSubmit={handleSubmitTask} className="task-form">
+            <h3>Task Form</h3>
+            <div className="form-input-container">
+                <label>Work Title</label>
+                <input type="text" name="work-title" placeholder="Type here..."></input>
             </div>
-
-            <div className="user-task-input">
-            <label>Enter the Task: </label>
-            <input
-                value={task2}
-                onChange={(e) => setTask2(e.target.value)}
-            />
+            <div className="form-input-container">
+                <label>Task Title</label>
+                <input type="text" name="task-title" placeholder="Type here..." required></input>
             </div>
-
-            <div className="user-task-input">
-            
-            <label>Assignee</label>
-                <select
-                    value={assignee}
-                    onChange={(e) => {
-                        setAssignee(e.target.value);
-                    }}
-                >
-                    <option value="Raj">Raj</option>
-                    <option value="mnaya">Manya</option>
-                    <option value="adarsh">adarsh</option>
+            <div className="form-input-container">
+                <label>Assignee</label>
+                <select>
+                    {assigneeOptions.map((name) => {
+                        return (<option value={name}>{name}</option>);
+                    })}
                 </select>
             </div>
-
-
-            <button onClick={handleSubmit}>SUBMIT</button>
-        </>
+            <div className="form-input-container">
+                <label>Deadline</label>
+                <input type="date" name="deadline"></input>
+            </div>
+            <button>Add Task</button>
+        </form>
     );
 };
 
-export default Taskform;
+export default TaskForm;

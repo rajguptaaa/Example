@@ -3,7 +3,7 @@ import React from 'react';
 const VideosCard = () => {
     return(
         <>
-            <img src={video.thumbnail} alt='image1'/>
+            <img src={video.thumbnail[0].url} alt='image1'/>
             <h3>{video.title}</h3>
             <p><strong>Description: {video.description}</strong></p>
             <p><strong>Author: {video.author}</strong></p>
