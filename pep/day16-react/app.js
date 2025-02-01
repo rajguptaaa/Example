@@ -1,15 +1,14 @@
-import React from "react";
+// ES6 ES Modules
 import ReactDOM from "react-dom/client";
-import DummyTodos from './src/pages/dummyTodos';
 
 const domElement = document.getElementById("dom-root");
 const reactRoot = ReactDOM.createRoot(domElement);
 
 const App = () => {
     return (
-<>
-            <DummyTodos />
-</> 
+        <>
+
+        </>
     );
 };
 

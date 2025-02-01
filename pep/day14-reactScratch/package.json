@@ -5,16 +5,19 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "raj": "parcel app.html",
-    "start":"parcel app.html"
+    "start": "parcel app.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dom": "^0.0.3",
     "parcel": "^2.13.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.1.5",
+    "router": "^1.3.8"
   },
   "devDependencies": {
     "process": "^0.11.10"
